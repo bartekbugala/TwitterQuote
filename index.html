@@ -11,28 +11,30 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <style>
-    main {
-      margin: 20px 0;
-      padding: 20px;
-      min-height: 450px;
-      background-color: #55acee;
-      color: rgb(241, 241, 241);
+      main {
+        margin: 20px 0;
+        padding: 20px;
+        min-height: 450px;
+        background-color: #55acee;
+        color: rgb(241, 241, 241);
       }
       .box {
         display: flex;
         align-items: center;
         min-height: 250px;
         flex-wrap: wrap;
-        }
-        .quote, .author {
-          font-size: 20px;
-          flex: 0 0 100%;
-        }
-      button, a {
+      }
+      .quote,
+      .author {
+        font-size: 20px;
+        flex: 0 0 100%;
+      }
+      .trigger,
+      .tweet {
         display: block;
         margin: 10px auto;
         color: rgb(241, 241, 241);
@@ -42,9 +44,14 @@
         padding: 5px 10px;
         width: 200px;
         border-radius: 5px;
+        text-decoration: none;
       }
-
-
+      .trigger:hover,
+      .tweet:hover {
+        background-color: #83c6fa;
+        color: rgb(241, 241, 241);
+        text-decoration: none;
+      }
     </style>
     <main class="container text-center">
       <header>

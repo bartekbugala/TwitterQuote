@@ -3,7 +3,10 @@ let quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 
 
 function getQuote() {
-    fetch(quoteUrl, { cache: "no-store" })
+    // CORS fix
+    let prefix = "https://cors-anywhere.herokuapp.com/";
+    
+    fetch(prefix + quoteUrl, { cache: "no-store" })
         .then(function(resp) {
             return resp.json();
         })
